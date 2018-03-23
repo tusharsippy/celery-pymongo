@@ -67,5 +67,5 @@ Celery-pymongo is a deployment of celery which uses RabbitMQ as message broker, 
 ### TODO
 - add scraping example
 - add celery logger for logging
-- add mulitple mongodb database options
+- add multiple mongodb database options
 - add supervisor to run celery
