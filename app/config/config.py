@@ -40,5 +40,9 @@ servers = {
     'task_addition': {
         'db': Config.get('SERVERS', 'db_task_addition'),
         'col': Config.get('SERVERS', 'col_task_addition'),
+    },
+    'scrape_titles':{
+        'db': Config.get('SERVERS', 'db_scrape_titles'),
+        'col': Config.get('SERVERS', 'col_scrape_titles'),
     }
 }

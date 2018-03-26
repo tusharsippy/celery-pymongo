@@ -25,3 +25,16 @@ class Mongo:
             pass
 
         return inserted_id
+
+    def save_titles(self, data_to_save):
+        """
+        save results of task defined at tasks/examples/basic.py as get_title
+        Return document insert id
+        """
+        inserted_id = None
+        try:
+            inserted_id = self.conn[servers['scrape_titles']['db']][servers['scrape_titles']['col']].insert_one(data_to_save).inserted_id
+        except Exception as e:
+            print(e)
+            pass
+        return inserted_id
